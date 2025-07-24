@@ -24,21 +24,26 @@ li {
 
 .container {
   width: 100%;
+  height: 100vh;
 }
 
 .container::after {
   content: "";
+  position: absolute;
+  bottom: 0;
   display: block;
   clear: both;
 }
 
 .container .bgSection {
-  float: right;
+  width: 100%;
+  height: 100%;
 }
 
 .container .bgSection #frame {
+  position: relative;
   width: 100%;
-  height: 100vh;
+  height: 100%;
 }
 
 .container .bgSection #frame .panels {
