@@ -45,7 +45,7 @@ li {
   position: absolute;
   top: 0;
   right: 0;
-  width: 1384px;
+  width: calc(100% - 500px);
   height: 100%;
   z-index: 5;
 }
@@ -238,80 +238,9 @@ li {
   font-size: 11px;
 }
 
-@media screen and (max-width: 1600px) {
-  .container .bgSection {
-    width: 68%;
-  }
-
-  .container .bgSection #frame .panels {
-    width: 100%;
-  }
-
-  .container .loginCont {
-    width: 32%;
-    right: 0;
-  }
-
-  .container .loginCont .login {
-    width: 80%;
-    padding: 35px;
-  }
-
-}
-
-@media screen and (max-width: 1255px) {
+@media screen and (max-width: 1670px) {
   .container {
-    width: 100%;
-  }
-
-  .container::after {
-    content: "";
-    display: block;
-    clear: both;
-  }
-
-  .container .bgSection {
-    display: none;
-  }
-
-  .container .bgMobile {
-    display: block;
-  }
-
-  .container .bgMobile li {
-    height: 100%;
-  }
-
-  .container .bgMobile img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-  .container .loginCont {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    float: none;
-  }
-
-  .container .loginCont .login {
-    width: 40%;
-    min-width: 340px;
-    height: 90%;
-    padding: 30px 10px;
-    background-color: #fff;
-  }
-
-  .login .loginInput input {
-    height: 30px;
-    margin-bottom: 5px;
-  }
-
-  .login .saveId {
-    margin-top: 5px;
-    margin-left: 10px;
-    font-size: 12px;
+    min-width: 1650px;
+    overflow: auto;
   }
 }
